@@ -59,7 +59,6 @@ img {
 .col {
     padding-left: 1rem;
     padding-right: 1rem;
-    border: 2px dashed white;
 }
 
 /* TEXT */
@@ -112,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -129,41 +129,52 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
- /************************************************
+/************************************************
       ALL FORMATS FIX
  ************************************************/
 
- .container {
+.container {
     width: 100%;
- }
+}
 
- /************************************************
+/************************************************
       DESKTOP FIX
  ************************************************/
 
-@media screen and (min-width: 1200px){
-    
- .container {
-    max-width: 1180px;
- }
+@media screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1180px;
+    }
 }
 
- /************************************************
+/************************************************
       MOBILE FIX
  ************************************************/
 
- @media screen and (max-width: 480px){
-    
-   
-.row {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;}
-.row .col {width: 100%;
-margin-bottom: 40px;}
+@media screen and (max-width: 480px) {
 
-.why-us {
-margin-top: 50px;
-padding-top: 30px;    background-color: black;
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .row .col {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .why-us {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        background-color: black;
+    }
+    .steps {
+        margin-bottom: 0px;
+    }
 }
- }
